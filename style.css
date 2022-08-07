@@ -1,0 +1,120 @@
+:root {
+    --bg: hsl(0, 0%, 85%);
+    --result: hsl(0, 0%, 60%);;
+    --text: hsl(0, 0%, 90%);
+    --main: hsl(180, 10%, 20%);
+    --accent: hsl(22, 97%, 48%);
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    min-height:100vh;
+    margin: 0 0;
+    background-color: var(--bg);
+  }
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+.result {
+    display: flex;
+    height: 6rem;
+    justify-self: stretch;
+    background-color: var(--result);
+    border-radius: 8px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 0.675rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main);
+}
+
+.previous {
+    font-size: 1.2rem;
+}
+
+.current {
+    font-size: 2rem;
+}
+
+.buttons {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    color: var(--text);
+    border: none;
+    height: 4rem;
+    width: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    margin: 0 0;
+}
+
+.number {
+    background-color: var(--main);
+}
+
+.operator {
+    background-color: var(--accent);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main);
+}
+
+.github-link {
+    color: var(--main);
+    transition: transform 0.2s ease-in-out;
+}
+
+.github-link:hover {
+   transform: scale(1.2); 
+}
