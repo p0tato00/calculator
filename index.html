@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/d028d7ee67.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,29 +17,29 @@
     <div class="container">
         <div class="calculator">
             <div class="result">
-                <p class="previous">0</p>
-                <p class="current">0</p>
+                <p id="previous">0</p>
+                <p id="current">0</p>
             </div>
             <div class="buttons">
-                <button class="operator">C</button>
-                <button class="operator"><</button>
-                <button class="operator">%</button>
-                <button class="operator">/</button>
-                <button class="number">7</button>
-                <button class="number">8</button>
-                <button class="number">9</button>
-                <button class="operator">X</button>
-                <button class="number">4</button>
-                <button class="number">5</button>
-                <button class="number">6</button>
-                <button class="operator">-</button>
-                <button class="number">1</button>
-                <button class="number">2</button>
-                <button class="number">3</button>
-                <button class="operator">+</button>
-                <button class="operator">.</button>
-                <button class="number">0</button>
-                <button class="operator grid-col-span-2">=</button>
+                <button class="orange-bg" id="clearBtn">C</button>
+                <button class="orange-bg" id="delBtn"><</button>
+                <button class="orange-bg" id="percentBtn">%</button>
+                <button class="orange-bg operator" data-operator="divide">/</button>
+                <button class="grey-bg number">7</button>
+                <button class="grey-bg number">8</button>
+                <button class="grey-bg number">9</button>
+                <button class="orange-bg operator" data-operator="multiply">X</button>
+                <button class="grey-bg number">4</button>
+                <button class="grey-bg number">5</button>
+                <button class="grey-bg number">6</button>
+                <button class="orange-bg operator" data-operator="substract">-</button>
+                <button class="grey-bg number">1</button>
+                <button class="grey-bg number">2</button>
+                <button class="grey-bg number">3</button>
+                <button class="orange-bg operator" data-operator="add">+</button>
+                <button class="orange-bg" id="pointBtn">.</button>
+                <button class="grey-bg number ">0</button>
+                <button class="orange-bg grid-col-span-2" id="equalsBtn">=</button>
             </div>
         </div>
         <footer>

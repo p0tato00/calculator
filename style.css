@@ -3,7 +3,11 @@
     --result: hsl(0, 0%, 60%);;
     --text: hsl(0, 0%, 90%);
     --main: hsl(180, 10%, 20%);
+    --main-hover: hsl(180, 10%, 15%);
+    --main-pressed: hsl(180, 10%, 10%);
     --accent: hsl(22, 97%, 48%);
+    --accent-hover: hsl(22, 97%, 43%);
+    --accent-pressed: hsl(22, 97%, 38%);
 }
 
 .grid-col-span-2 {
@@ -58,11 +62,11 @@ body {
     color: var(--main);
 }
 
-.previous {
+#previous {
     font-size: 1.2rem;
 }
 
-.current {
+#current {
     font-size: 2rem;
 }
 
@@ -87,12 +91,32 @@ button {
     margin: 0 0;
 }
 
-.number {
+.grey-bg {
     background-color: var(--main);
 }
 
-.operator {
+.grey-bg:hover {
+    background-color: var(--main-hover);
+    cursor: pointer;
+}
+
+.grey-bg:active {
+    background-color: var(--main-pressed);
+    cursor: pointer;
+}
+
+.orange-bg {
     background-color: var(--accent);
+}
+
+.orange-bg:hover {
+    background-color: var(--accent-hover);
+    cursor: pointer;
+}
+
+.orange-bg:active {
+    background-color: var(--accent-pressed);
+    cursor: pointer;
 }
 
 footer {
