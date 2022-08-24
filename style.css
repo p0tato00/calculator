@@ -48,7 +48,7 @@ body {
     padding-block: 2rem;
 }
 
-.result {
+.resultScreen {
     display: flex;
     height: 6rem;
     justify-self: stretch;
@@ -62,11 +62,7 @@ body {
     color: var(--main);
 }
 
-#previous {
-    font-size: 1.2rem;
-}
-
-#current {
+#result {
     font-size: 2rem;
 }
 
